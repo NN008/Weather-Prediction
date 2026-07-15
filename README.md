@@ -29,14 +29,19 @@ Random Forest nearly eliminated false negatives (3 misclassified rain samples). 
 
 ## Structure
 ```
-Weather_Pred/
-├── Classification.ipynb        # Model comparison notebook
-├── Project1WeatherDataset.csv  # Raw dataset
-└── weather_forecast_data.csv   # Processed data
+Weather-Prediction/
+├── notebooks/
+│   ├── Classification.ipynb    # Exploratory data analysis
+│   └── Model_Compare.ipynb     # RF vs. Logistic Regression + active learning
+└── data/
+    ├── raw/
+    │   └── Project1WeatherDataset.csv
+    └── processed/
+        └── weather_forecast_data.csv
 ```
 
 ## Usage
 ```bash
 pip install pandas numpy scikit-learn matplotlib seaborn
-jupyter notebook Classification.ipynb
+jupyter notebook notebooks/Model_Compare.ipynb
 ```
